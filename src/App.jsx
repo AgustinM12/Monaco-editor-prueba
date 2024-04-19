@@ -58,7 +58,7 @@ export const App = () => {
       <article className="bg-slate-800 flex flex-col max-w-screen min-h-screen">
 
         <div className="pb-5">
-          <h1 className="text-white text-3xl text-center">Monaco Editor</h1>
+          <h1 className="text-white text-3xl text-center font-bold">Monaco Editor</h1>
         </div>
 
         <section className="grid grid-rows-2 grid-cols-1 lg:grid-cols-2 lg:grid-rows-1 border-b border-t border-white pb-5">
@@ -79,7 +79,7 @@ export const App = () => {
 
 
           <section className="flex flex-col justify-center items-center">
-            <h2 className="text-white text-center flex-1 underline">Resultado del codigo:</h2>
+            <h2 className="text-white font-semibold text-center flex-1 underline">Resultado del codigo:</h2>
 
             <div className="rounded-md text-white bg-gray-700 border-2 border-white">
               {typeof result === 'object' && result !== null ? (
@@ -94,7 +94,7 @@ export const App = () => {
 
 
         <section className="flex justify-center items-center flex-col">
-          <h3 className="font-bold underline text-white pb-3">Respuesta de la IA:</h3>
+          <h3 className="font-semibold underline text-white pb-3">Respuesta de la IA:</h3>
           <p className="bg-gray-800 border-2 border-white rounded text-white">{data}</p>
 
           <div className={`${loading ? "visible" : "hidden"}`} >
